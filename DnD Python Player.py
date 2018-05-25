@@ -37,8 +37,20 @@ class Player:
         Player.IM = Player.IM / 2
         Player.ChM = Player.Charisma - 10
         Player.ChM = Player.ChM / 2
-    def __init__(self, Health):
+    def __init__(self, Health, Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma, SM, DM, CoM, IM, WM, ChM):
         self.Health = Player.Health
+        self.Strength = Player.Strength
+        self.Dexterity  Player.Dexterity
+        self.Constitution = Player.Constitution
+        self.Intelligence = Player.Intelligence
+        self.Wisdom = Player.Wisdom
+        self.Charisma = Player.Charisma
+        self.SM = Player.SM
+        self.DM = Player.DM
+        self.CoM = Player.CoM
+        self.IM = Player.IM
+        self.WM = Player.WM 
+        self.ChM = Player.ChM
 
 def ListActions(Actions):
     print('Actions to Choose From')
@@ -68,8 +80,8 @@ def ListDice(Dice):
     elif DieNum is 7:
         print(random.randint(1, 100))
 
-Player.Start(Player.Health)
-player = Player(Player.Health)
+Player.Start(Player.Health, Player.Strength, Player.Dexterity, Player.Constitution, Player.Intelligence, Player.Wisdom, Player.Charisma, Player.SM, Player.DM, Player.CoM, Player.IM, Player.WM, Player.ChM)
+player = Player(Player.Health, Player.Strength, Player.Dexterity, Player.Constitution, Player.Intelligence, Player.Wisdom, Player.Charisma, Player.SM, Player.DM, Player.CoM, Player.IM, Player.WM, Player.ChM)
 
 while(True):
     ListActions(Actions)
