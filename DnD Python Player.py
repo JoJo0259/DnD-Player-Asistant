@@ -40,7 +40,7 @@ class Player:
     def __init__(self, Health, Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma, SM, DM, CoM, IM, WM, ChM):
         self.Health = Player.Health
         self.Strength = Player.Strength
-        self.Dexterity  Player.Dexterity
+        self.Dexterity = Player.Dexterity
         self.Constitution = Player.Constitution
         self.Intelligence = Player.Intelligence
         self.Wisdom = Player.Wisdom
