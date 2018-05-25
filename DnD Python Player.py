@@ -12,7 +12,7 @@ class Player:
     def __init__(self, Health):
         self.Health = Player.Health
 
-def ListActions(Actions, ActNum):
+def ListActions(Actions):
     print('Actions to Choose From')
     for i in range(len(Actions)):
         print(i+1,'.', Actions[i])
@@ -42,8 +42,7 @@ def ListDice(Dice):
 
 Player.Start(Player.Health)
 player = Player(Player.Health)
-Player.Start(Player.Health)
-player2 = Player(Player.Health)
+
 while(True):
-    ListActions(Actions, ActNum)
+    ListActions(Actions)
 
