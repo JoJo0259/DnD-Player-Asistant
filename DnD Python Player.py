@@ -19,12 +19,54 @@ class Player:
     ChM = 0
     def Start(Health, Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma, SM, DM, CoM, IM, WM, ChM):
         Player.Health = int(input("What is your Health? : "))
+        print("")
         Player.Strength = int(input("What is your Strength? : "))
+        if Player.Strength >= 21:
+            while Player.Strength >= 21:
+                print("")
+                print("That number is greater than 20.  Retype your number.")
+                print("")
+                Player.Strength = int(input("What is your Strength? : "))
+        print("")
         Player.Dexterity = int(input("What is your Dexterity? : "))
+        if Player.Dexterity >= 21:
+            while Player.Dexterity >= 21:
+                print("")
+                print("That number is greater than 20.  Retype your number.")
+                print("")
+                Player.Dexterity = int(input("What is your Dexterity? : "))
+        print("")
         Player.Constitution = int(input("What is your Constitution? : "))
+        if Player.Constitution >= 21:
+            while Player.Constitution >= 21:
+                print("")
+                print("That number is greater than 20.  Retype your number.")
+                print("")
+                Player.Constitution = int(input("What is your Constitution? : "))
+        print("")
         Player.Intelligence = int(input("What is your Intelligence? : "))
+        if Player.Intelligence >= 21:
+            while Player.Intelligence >= 21:
+                print("")
+                print("That number is greater than 20.  Retype your number.")
+                print("")
+                Player.Intelligence = int(input("What is your Intelligence? : "))
+        print("")
         Player.Wisdom = int(input("What is your Widom? : "))
+        if Player.Wisdom >= 21:
+            while Player.Wisdom >= 21:
+                print("")
+                print("That number is greater than 20.  Retype your number.")
+                print("")
+                Player.Wisdom = int(input("What is your Wisdom? : "))
+        print("")
         Player.Charisma = int(input("What is your Charisma? : "))
+        if Player.Charisma >= 21:
+            while Player.Charisma >= 21:
+                print("")
+                print("That number is greater than 20.  Retype your number.")
+                print("")
+                Player.Charisma = int(input("What is your Charisma? : "))
         Player.SM = Player.Strength - 10
         Player.SM = Player.SM / 2
         Player.DM = Player.Dexterity - 10
